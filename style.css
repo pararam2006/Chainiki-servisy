@@ -1,0 +1,26 @@
+body {
+    background-color: lightsalmon;
+}
+.main {
+    width: 70%;
+    height: 400px;
+    margin: 0px auto; /*внешний отступ*/
+    display: flex; /*режим flex для детей div class=main*/
+    flex-direction: row; /*дети main идут слева направо*/
+
+}
+.left {
+    width: 30%;
+    display: flex;
+    justify-content: center; /*по горизонтали*/
+    align-items: center; /*по вертикали*/
+}
+.right {
+    width: 70%; /*сумма с left не более 100%*/
+}
+.left>img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 1000px;
+}
